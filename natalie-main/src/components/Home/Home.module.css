@@ -1,0 +1,467 @@
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.imgTlf{
+    position:absolute;
+    width: 200px;
+    z-index: 3;
+    margin-left: 50px;
+    margin-top: 110px;
+}
+
+.logoMini{
+    width: 50px;
+    filter: grayscale(1);
+    margin-left: 50px;
+}
+
+.containerTlf{
+    position: relative;
+    /* background-color: red; */
+    width: 300px;
+    height: 450px;
+}
+
+.carrusel{
+    min-width: 300px;
+    height: 450px;
+    position: absolute;
+    z-index: 4;
+    /* background-color: red; */
+}
+
+.carrusel2{
+    min-width: 300px;
+    height: 450px;
+    position: absolute;
+    z-index: 4;
+    margin-left: 50px;
+    margin-top: 150px;
+    /* background-color: red; */
+}
+
+.noLink{
+    text-decoration: none;
+    color: white;
+}
+
+.img{
+    width: 100%;
+    margin-top: -700px;
+    /* z-index: 1; */
+    animation: entrada 2s forwards;
+}
+
+@keyframes entrada {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.pantallaNegra{
+    position: absolute;
+    /* z-index: 3; */
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0.509) 0%, rgba(0, 0, 0, 0.500) 100%);
+}
+
+.titleName{
+    /* position: absolute; */
+    z-index: 2;
+    cursor: pointer;
+    transition: .3s;
+    color:white;
+    line-height: 3px;
+    font-size: 3.18em;
+}
+
+.inicio{
+    position: absolute;
+    z-index: 2;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 100px;
+    justify-content: space-around;
+    width: 100vw;
+    /* background-color: red; */
+}
+
+.inicioTitle{
+    /* position: absolute; */
+    /* z-index: 2;
+    margin-top: 17%;
+    margin-left: 75vw;
+    transform: translateX(-50%); */
+    color:white;
+}
+
+.logoNata{
+    /* position: absolute; */
+    width: 300px;
+    /* margin-top: 150px; */
+    /* margin-left: 100px; */
+    z-index: 2;
+}
+
+.buttonReserva{
+    /* position: absolute; */
+    z-index: 2;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: .3s;
+    background-color: black;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px 40px;
+    font-size: 1.5em;
+}
+
+.buttonReserva:hover{
+    color:black;
+    background-color: white;
+}
+
+
+.titleProfesion{
+    /* position: absolute; */
+    z-index: 2;
+    letter-spacing: 16.5px;
+    font-weight: 100;
+    line-height: 3px;
+    color: rgb(188, 188, 188);
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* NAV */
+/* NAV */
+/* NAV */
+
+.nav{
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0);
+    width: 90vw;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+}
+.navDiv{
+    position: sticky;
+    z-index: 4;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 11vh;
+}
+
+.ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    gap: 40px;
+}
+
+.li{
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+    color:rgb(0, 0, 0);
+}
+
+.li::before{
+    content:"";
+    position:absolute;
+    /* background-color: red; */
+    border-radius: 20px;
+    color: black;
+    margin-top: 33px;
+    height: 3px;
+    width: 0px;
+    transition: .3s;
+}
+
+.li:hover::before{
+    background-color: rgb(63, 63, 63);
+    width: 100%;
+}
+
+.li:hover{
+    color: rgb(63, 63, 63);
+}
+
+/* RESUME */
+/* RESUME */
+/* RESUME */
+
+.resumeContainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.imgNatalie{
+    height: 500px;
+    /* margin: 50px; */
+    border-radius: 20px;
+}
+
+.quienSoy{
+    /* margin: auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.quienSoyText{
+    background-color: red;
+    width:200px;
+    height: 200px;
+}
+
+.especialidad{
+    width: 300px;
+    text-align: center;
+}
+
+.especialidades{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+    gap: 20px;
+    row-gap: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5%;
+}
+
+.espeImg{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.espeTitle{
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.carrusel{
+    min-width: 300px;
+    height: 450px;
+    /* background-color: red; */
+}
+.carrusel2{
+    min-width: 300px;
+    height: 450px;
+    /* margin-left: 100px; */
+    /* background-color: red; */
+}
+
+.disenoSonrisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:200px;
+    margin-top: 200px;
+}
+
+.disenoSonrisa2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:200px;
+}
+
+.texto{
+    text-align: right;
+}
+
+.descTexto{
+    width: 600px;
+    text-align: justify;
+}
+
+.titleTexto{
+    font-size: 3em;
+    margin: 0;
+}
+
+.buttonValoracion{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: .3s;
+    border: 2px solid rgba(128, 128, 128, 0);
+}
+
+.buttonValoracion:hover{
+    background-color: white;
+    color:black;
+    border: 2px solid grey;
+}
+
+.buttonValoracion:hover > .noLink{
+    color: black;
+}
+
+.buttonReserva:hover > .noLink{
+    color: black;
+}
+
+.descTexto{
+    font-size: 1.5em;
+}
+
+.subtitleTexto{
+    margin: 0;
+    color: rgb(153, 153, 153);
+}
+
+.final{
+    padding-top: 100px;
+    background-color: black;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 250px;
+    color: white;
+}
+
+.logoNatalie{
+    width: 300px;
+}
+
+.mapa{
+    width: 300px;
+    height: 200px;
+    /* background-color: red; */
+}
+
+.textoGrande{
+    font-size: 3em;
+}
+
+.numero{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconitos{
+    width: 50px;
+    height: 50px;
+    /* background-color: red; */
+}
+
+.textoYina{
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+@media screen and (max-width:1300px) {
+    .container{
+        height: fit-content;
+    }
+    .resumeContainer{
+        height: auto;
+    }
+    .descTexto{
+        width: 600px;
+    }
+    .disenoSonrisa{
+        margin-top: 100px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .disenoSonrisa2{
+        flex-direction: column;
+        margin: 120px 0px 0px 0px;
+        padding-bottom: 200px;
+        gap: 50px;
+    }
+    .especialidades{
+        flex-direction: column;
+        width: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .inicio{
+        margin-top: 200px;
+        flex-direction: column-reverse;
+    }
+    .pantallaNegra{
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.509) 0%, rgb(255 255 255 / 79%) 100%);
+    }
+    .titleName{
+        color: rgb(65, 65, 65);
+    }
+    .titleProfesion{
+        color: gray;
+    }
+    .final{
+        flex-direction: column;
+        height: fit-content;
+        gap: 0px;
+        text-align: center;
+    }
+    .mapa{
+        margin: 0 auto;
+    }
+    .numero:last-child{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .descTexto{
+        width: fit-content;
+        font-size: 1.3em;
+        padding: 0px 50px;
+    }
+    .especialidad{
+        width:auto
+    }
+    .titleTexto{
+        font-size: 2.2em;
+    }
+    .buttonValoracion{
+        font-size: 1.3em;
+    }
+    .texto{
+        text-align: center;
+    }
+}

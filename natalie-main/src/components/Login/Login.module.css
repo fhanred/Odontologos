@@ -1,0 +1,122 @@
+.login{
+    overflow: hidden;
+}
+
+.loginContainer{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(236, 236, 236);
+    width:300px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50vh;
+    border-radius: 10px;
+    transform: translateY(-50%);
+}
+
+.title{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 1.6em;
+}
+
+.inputContainer{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 30px;
+    margin-bottom: 30px;
+    /* background-color: red; */
+    position: relative;
+}
+
+.button{
+    background-color: rgb(163, 163, 163);
+    border: 0;
+    border-radius: 3px;
+    width: 200px;
+    padding: 8px 20px;
+    font-size: 1.2em;
+    margin-left:50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.textInput{
+    position: absolute;
+    color: grey;
+    margin-left: 10px;
+    transition: .3s;
+    z-index: -1;
+    margin-top: 5px;
+}
+
+.input{
+    border: 1px solid rgb(209, 209, 209);
+    height: 35px;
+    border-radius: 2px;
+    width: 180px;
+    background-color: transparent;
+    position: absolute;
+    transition: .3s;
+    padding: 0px 10px;
+    outline: 1px solid transparent;
+}
+
+.input:focus{
+    border: 1px solid rgb(163, 163, 163);
+    outline: 1px solid rgb(163, 163, 163);
+}
+
+.input:focus + .textInput{
+    color: rgb(163, 163, 163);
+    font-size: .8em;
+    font-weight: 600;
+    transform: translateY(-15px) translateX(-5px);
+    background-color: white;
+    padding: 0px 6px;
+    z-index: 2;
+}
+
+.input:not(:placeholder-shown).input:not(:focus) + .textInput{
+    color: rgb(185, 185, 185);
+    font-size: .8em;
+    font-weight: 600;
+    transform: translateY(-15px) translateX(-5px);
+    background-color: white;
+    padding: 0px 6px;
+    z-index: 2;
+}
+
+.olvidemipass{
+    /* display: flex; */
+    width: fit-content;
+    margin: 5px auto;
+    font-weight: 500;
+    font-size: .85em;
+    cursor: pointer;
+}
+
+.text{
+    /* display: flex; */
+    width: fit-content;
+    margin: 10px auto;
+    font-size: .95em;
+}
+
+.registro{
+    font-size: .95em;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.logo{
+    width: 75px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 0px;
+    filter: grayscale(1);
+}

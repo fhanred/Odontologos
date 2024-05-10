@@ -1,0 +1,88 @@
+.select{
+    font-size: 1.5em;
+    border: 0;
+}
+
+.control{
+    text-align: center;
+}
+
+.chart{
+    margin:0 auto;
+}
+
+.button{
+    z-index: 2;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: .3s;
+    background-color: black;
+    border-radius: 10px;
+    border: 0;
+    padding: 5px 20px;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.inputContainer{
+    /* margin-left: 50%; */
+    transform: translateX(-50%);
+    width: 200px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin: 20px auto;
+    /* background-color: red; */
+    position: relative;
+}
+
+.textInput{
+    position: absolute;
+    color: grey;
+    margin-left: 10px;
+    transition: .3s;
+    z-index: -1;
+    margin-top: 5px;
+}
+
+.input{
+    border: 1px solid rgb(209, 209, 209);
+    height: 35px;
+    border-radius: 2px;
+    width: 180px;
+    background-color: transparent;
+    position: absolute;
+    transition: .3s;
+    padding: 0px 10px;
+    outline: 1px solid transparent;
+}
+
+.input:focus{
+    border: 1px solid orange;
+    outline: 1px solid orange;
+}
+
+.input:focus + .textInput{
+    color: orange;
+    font-size: .8em;
+    font-weight: 600;
+    transform: translateY(-15px) translateX(-5px);
+    background-color: white;
+    padding: 0px 6px;
+    z-index: 2;
+}
+
+.input:not(:placeholder-shown).input:not(:focus) + .textInput{
+    color: rgb(185, 185, 185);
+    font-size: .8em;
+    font-weight: 600;
+    transform: translateY(-15px) translateX(-5px);
+    background-color: #ffffff;
+    padding: 0px 6px;
+    z-index: 2;
+}

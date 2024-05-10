@@ -1,0 +1,57 @@
+.perfilContainerTop{
+    display: flex;
+    gap:50px;
+    margin-bottom: 50px;
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* position: absolute; */
+    /* background-color: red; */
+}
+
+.perfilContainerBottom{
+    display: flex;
+    gap: 20px;
+}
+
+.button{
+    z-index: 2;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: .3s;
+    background-color: black;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px 40px;
+    font-size: 1.3em;
+}
+
+.button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.container{
+    position: absolute;
+    margin-left:20vw;
+    margin-top:11vh;
+    /* background-color: red; */
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: fit-content;
+}
+
+.inputFile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
